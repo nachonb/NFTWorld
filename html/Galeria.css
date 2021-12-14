@@ -1,0 +1,236 @@
+header{
+    width: 100%;
+    grid-area: header;
+}
+
+
+nav{
+    top: 0px;
+    background-image: url(../img/Header-image.jpg);
+    background-size: cover;
+    border: 4px solid black;
+    width: 100%;
+    height:  100%;
+    grid-area: nav;
+    
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: rgb(106, 245, 255);
+    width: 19%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+h1{
+    color: rgb(106, 245, 255);
+    text-align: center;
+    background-color: rgb(27, 3, 51);
+    font-family: 'Genos', sans-serif;
+}
+h2{
+    color: rgb(106, 245, 255);
+    text-align: center;
+    background-color: rgb(27, 3, 51);
+    font-family: 'Genos', sans-serif;
+}
+
+main{background-color: rgb(33, 0, 65);
+    height: 1000px;
+    grid-area: main;
+}
+
+#divGaleria
+{
+    height: 1200px;
+    background-color: rgb(33, 0, 65);
+}
+
+
+
+
+footer{height: 100px;
+    background-color: black;
+    background-size: cover;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: rgb(106, 245, 255);
+    text-align: center;
+    grid-area: footer;
+}
+
+#footerFrase{
+    background-color: black;
+    background-size: cover;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: rgb(106, 245, 255);
+    text-align: left;
+}
+
+#divGigante{
+    display:grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 100px 1000px 100px;
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    
+}
+
+#grillaGaleria{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20%;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: "foto1 foto2 foto3"
+                         "foto4 foto5 foto6";
+    justify-content: space-around;
+
+                    
+}
+
+#fotoUno{
+    grid-area: foto1;
+    transition: 1s  all;
+}
+
+#fotoUno:hover{
+    transform: scale(1.15,1.15);
+}
+
+#fotoDos{
+    grid-area: foto2;
+    transition: 1s  all;
+}
+
+#fotoDos:hover{
+    transform: scale(1.15,1.15);
+}
+
+#fotoTres{
+    grid-area: foto3;
+    transition: 1s  all;
+}
+
+#fotoTres:hover{
+    transform: scale(1.15,1.15);
+}
+
+#fotoCuatro{
+    grid-area: foto4;
+    transition: 1s  all;
+}
+
+#fotoCuatro:hover{
+    transform: scale(1.15,1.15);
+}
+
+#fotoCinco{
+    grid-area: foto5;
+    transition: 1s  all;
+}
+
+#fotoCinco:hover{
+    transform: scale(1.15,1.15);
+}
+
+#fotoSeis{
+    grid-area: foto6;
+    transition: 1s  all;
+}
+
+#fotoSeis:hover{
+    transform: scale(1.15,1.15);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    ul{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #divGigante{
+        display:grid;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 100px 1000px 100px;
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+}
+    #grillaGaleria{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 20% 20%;
+        column-gap: 15px;
+        row-gap: 20px;
+        grid-template-areas: "foto1 foto2 foto3"
+                           "foto4 foto5 foto6";
+        justify-content: space-around;
+
+                    
+}
+
+
+}
+
+@media only screen and (min-width: 600px){
+
+
+    #divGigante{
+        display:grid;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 100px 1000px 100px;
+        grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+}
+    #grillaGaleria{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 20% 20%;
+        column-gap: 15px;
+        row-gap: 20px;
+        grid-template-areas: "foto1 foto2 foto3"
+                           "foto4 foto5 foto6";
+        justify-content: space-around;
+
+                    
+}
+}
+
