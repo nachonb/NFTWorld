@@ -39,7 +39,12 @@ h2{
     font-family: 'Genos', sans-serif;
 }
 
-main{background-color: rgb(33, 0, 65)}
+main{background-image: linear-gradient(rgb(33, 0, 65) , rgb(59, 7, 102));
+    grid-area: main;
+    height: 400px;
+    
+    }
+
 
 p{
     background-color: rgb(33, 0, 65);

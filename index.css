@@ -56,6 +56,10 @@ nav{
     width: 100%;
 }
 
+#cardFondo{
+    height: 100px;
+    width: 100px;
+}
 
 p{
     color: rgb(106, 245, 255);
@@ -116,7 +120,7 @@ li{
 #divGigante{
     display:grid;
     grid-template-columns: 20% 50% 30%;
-    grid-template-rows: 550px 100px 1000px 100px;
+    grid-template-rows: 550px 100px 1000px;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     
 }
