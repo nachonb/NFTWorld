@@ -1,0 +1,168 @@
+$PrimerColor: rgb(106, 245, 255);
+$bloquearelemento: inline-block;
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    height: 580px;
+    width: 100%;
+    grid-area: header;
+}
+
+
+#logo{
+   width: 60px;
+   height: 60px;
+    display: $bloquearelemento;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    background-image: url(img/Header-image.jpg);
+    background-size: cover;
+    border: 4px solid black;
+    width: 100%;
+    height:  100px;
+    grid-area: nav;
+}
+
+
+
+#imagenPortada{
+    display: $bloquearelemento;
+    height: 100%;
+    width: 100%;
+
+}
+
+#imagenNFTnon{
+    display: $bloquearelemento;
+    height: 100%;
+    width: 100%;
+  
+}
+
+#imagenGraficoBitcoin{
+    display: $bloquearelemento;
+    height: 100%;
+    width: 100%;
+}
+
+#cardFondo{
+    height: 100px;
+    width: 100px;
+}
+
+p{
+    color: $PrimerColor;
+    font-family: 'Genos', sans-serif;
+
+
+    
+}
+#parrafo1{
+    width: 100%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: $bloquearelemento;
+}
+
+#parrafo2{
+    width: 100%;
+    text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+#parrafo3{
+    width: 100%;
+    text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+   
+main{background-image: linear-gradient(rgb(33, 0, 65) , rgb(59, 7, 102));
+grid-area: main;
+height: 1000px;
+
+}
+
+#tituloPrincipal{
+    color: $PrimerColor;
+    text-align: center;
+    background-color: rgb(27, 3, 51);
+    font-family: 'Genos', sans-serif;
+    
+}
+
+#grillaMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+}
+
+
+li{
+    display: $bloquearelemento;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: $PrimerColor;
+    width: 19%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#divGigante{
+    display:grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 550px 100px 1000px;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    
+}
+
+
+
+#parrafo1
+{
+    width: 28%;
+}
+
+
+footer{height: 100px;
+    background-color: black;
+    background-size: cover;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: $PrimerColor;
+    text-align: center;
+    grid-area: footer;
+}
+
+#footerFrase{
+    background-color: black;
+    background-size: cover;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Genos', sans-serif;
+    text-decoration: none;
+    color: $PrimerColor;
+    text-align: left;
+}
