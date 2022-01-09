@@ -1,5 +1,10 @@
-$PrimerColor: rgb(106, 245, 255);
 $bloquearelemento: inline-block;
+$colores: red, blue, green, yellow, violet;
+@each $color in $colores{
+    .div-#{color}{
+        background-color: $color;
+    }
+}
 
 *{
     margin: 0;
@@ -64,32 +69,35 @@ nav{
     width: 100px;
 }
 
+    @mixin mixinUno($colorLetra , $tamLetra) {
+        color: $colorLetra;
+        font-size: $tamLetra;
+        font-family: 'Genos', sans-serif;
+
+        
+    }
 p{
-    color: $PrimerColor;
-    font-family: 'Genos', sans-serif;
-
-
-    
+    @include mixinUno(rgb(64, 183, 212) , 20px);
+  
 }
-#parrafo1{
+.parrafoUno{
     width: 100%;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
 display: $bloquearelemento;
+margin-top: 50px
+
 }
 
-#parrafo2{
-    width: 100%;
-    text-align: center;
-margin-left: auto;
-margin-right: auto;
+.parrafoDos{
+    @extend .parrafoUno;
+ 
+    
 }
-#parrafo3{
-    width: 100%;
-    text-align: center;
-margin-left: auto;
-margin-right: auto;
+.parrafoTres{
+    @extend .parrafoUno;
+
 }
    
 main{background-image: linear-gradient(rgb(33, 0, 65) , rgb(59, 7, 102));
@@ -114,13 +122,12 @@ height: 1000px;
 
 
 li{
+    @include mixinUno(rgb(64, 183, 212) , 20px);
     display: $bloquearelemento;
     list-style-type: none;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Genos', sans-serif;
     text-decoration: none;
-    color: $PrimerColor;
     width: 19%;
     text-align: center;
     margin-top: 10px;
@@ -136,10 +143,7 @@ li{
 
 
 
-#parrafo1
-{
-    width: 28%;
-}
+
 
 
 footer{height: 100px;
@@ -156,13 +160,12 @@ footer{height: 100px;
 }
 
 #footerFrase{
+    @include mixinUno(rgb(64, 183, 212) , 15px);
     background-color: black;
     background-size: cover;
     list-style-type: none;
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Genos', sans-serif;
     text-decoration: none;
-    color: $PrimerColor;
     text-align: left;
 }
