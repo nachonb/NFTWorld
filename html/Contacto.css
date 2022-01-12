@@ -2,6 +2,11 @@ header{
     width: 100%;
 }
 
+.form-label{
+    font-family: 'Genos', sans-serif;
+    color: rgb(106, 245, 255) ;
+}
+
 
 nav{
     position: sticky;
@@ -41,7 +46,7 @@ h2{
 
 main{background-image: linear-gradient(rgb(33, 0, 65) , rgb(59, 7, 102));
     grid-area: main;
-    height: 400px;
+    height: 550px;
     
     }
 
@@ -60,11 +65,12 @@ footer{height: 100px;
     background-size: cover;
     list-style-type: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     font-family: 'Genos', sans-serif;
     text-decoration: none;
     color: rgb(106, 245, 255);
     text-align: center;
+    grid-area: footer;
 }
 
 #footerFrase{

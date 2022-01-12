@@ -1,5 +1,7 @@
 $bloquearelemento: inline-block;
 $colores: red, blue, green, yellow, violet;
+$PrimerColor: rgb(64, 183, 212);
+
 @each $color in $colores{
     .div-#{color}{
         background-color: $color;
@@ -31,10 +33,11 @@ img{
     height: 100%;
 }
 
-nav{
+nav
+{
     position: sticky;
     top: 0px;
-    background-image: url(img/Header-image.jpg);
+    background-image: url(../img/Header-image.jpg);
     background-size: cover;
     border: 4px solid black;
     width: 100%;
@@ -136,7 +139,7 @@ li{
 #divGigante{
     display:grid;
     grid-template-columns: 20% 50% 30%;
-    grid-template-rows: 550px 100px 1000px;
+    grid-template-rows: 620x 100px 1000px;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     
 }
